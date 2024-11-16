@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Color Theme Stuff */
+
+:root {
+    --base-color: #f4f6f9;
+    --base-variant: #e0e0e0;
+    --text-color: #212121;
+    --secondary-text: #E0E0E0;
+    --primary-color: #003366;
+    --secondary-color: #cc0000;
+}
+
+.darkmode {
+    --base-color: #24252A;
+    --base-variant: #35373f;
+    --text-color: #E0E0E0;
+    --secondary-text: #E0E0E0;
+    --primary-color: #003366;
+    --secondary-color: #cc0000;
+}
+
+.lightmode {
+    --base-color: #f4f6f9;
+    --base-variant: #e0e0e0;
+    --text-color: #212121;
+    --secondary-text: #E0E0E0;
+    --primary-color: #003366;
+    --secondary-color: #cc0000;
+}
+
+#theme-switch {
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: #b8c5f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 2.5%;
+    right: 2%;
+}
+
+#theme-switch svg {
+    fill: var(--primary-color);
+}
+
+#theme-switch svg:last-child {
+    display: none;
+}
+
+.darkmode #theme-switch svg:first-child {
+    display: none;
+}
+
+.darkmode #theme-switch svg:last-child {
+    display: block;
+}
+
+
+
+
+/* Body */
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: var(--base-color);
+    color: var(--base-variant);
+}
+
+li,
+a,
+button {
+    font-family: "Montserrat";
+    font-weight: 500;
+    padding: 16px;
+    font-size: 16px;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+    background-color: var(--base-variant);
+    height: 100px;
+}
+
+.logo {
+    cursor: default;
+    width: 8%;
+    height: 8%;
+    position: fixed;
+    top: 0.5%;
+    left: 2%;
+
+}
+
+.nav_items {
+    list-style: none;
+}
+
+.nav_items li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_items li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_items li a:hover {
+    color: var(--secondary-color);
+}
+
+button {
+    padding: 9px 25px;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: var(--secondary-text)
+}
+
+button:hover {
+    background-color: var(--primary-color);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+
+
+
+/* Dropdown */
+.dropbtn {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: var(--primary-color);
+}
