@@ -20,20 +20,22 @@
 <body>
 
     <!-- Nav Bar -->
-    <header>
+    <header style="z-index: 1; position: sticky;">
         <img class="logo" src="../images/logo.svg">
+
         <nav>
+
             <ul class="nav_items">
                 <li><a href="home.html">Home</a></li>
 
                 <li class="dropdown">
-                    <button class="dropbtn">Event Information</button>
+                    <button class="dropbtn"><a style="color: white" href="events.html">Event Information</a></button>
                     <div class="dropdown-content">
-                      <a href="events.html">Offered Events</a>
-                      <a href="events.html">Year-Round Schedule</a>
-                      <a href="events.html"></a>
+                        <a href="events.html">Offered Events</a>
+                        <a href="events.html">Year-Round Schedule</a>
+                        <a href="events.html"></a>
                     </div>
-  
+
                 </li>
 
                 <li><a href="about.html">About</a></li>
@@ -52,7 +54,60 @@
         </button>
     </header>
 
-    
+    <div class="container">
+        <!-- Home Section -->
+        <section id="home" class="card">
+            <h2>Welcome to SkillsUSA</h2>
+            <p>SkillsUSA is a national organization that empowers students to become world-class workers and leaders in
+                their respective fields. At Metea Valley, we strive to foster excellence in career and technical
+                education.</p>
+        </section>
+
+        <section class="card">
+            <div class="event-number" id="eventCount">0</div>
+            <div class="event-text">SkillsUSA offers a variety of events every year!</div>
+            <button class="cta-button"><a style="color: white" href="events.html">View Events</a></button>
+        </section>
+
+        <section id="join" class="card">
+            <h2>Why Join SkillsUSA?</h2>
+            <p>By joining SkillsUSA, students gain access to a variety of career opportunities, leadership programs, and
+                competitions that enhance their skills and prepare them for the workforce.</p>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="card">
+            <h2>About SkillsUSA</h2>
+            <p>SkillsUSA is a partnership of students, teachers, and industry working together to ensure America has a
+                skilled workforce. SkillsUSA empowers students to become leaders, not only in their chosen careers but
+                in their communities as well.</p>
+        </section>
+
+        <!-- Events Section -->
+        <section class="card">
+            <h2>Upcoming SkillsUSA Events</h2>
+            <ul>
+                <li>State SkillsUSA Competition – March 2024</li>
+                <li>National SkillsUSA Conference – June 2024</li>
+                <li>Community Outreach – Ongoing</li>
+            </ul>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="card">
+            <h2>Contact Us</h2>
+            <p>For more information about SkillsUSA at Metea Valley, feel free to reach out to us!</p>
+            <ul>
+                <li>Email:<a id="links" href="mailto:ayushkul@k12.ipsd.org">ayushkul@k12.ipsd.org</a>or<a id="links"
+                        href="mailto:ayushkul@k12.ipsd.org">sukirtthanela5627@k12.ipsd.org</a></li>
+                <li>Address: Metea Valley High School, 1801 N. Eola Rd, Aurora, IL 60502</li>
+            </ul>
+        </section>
+
+
+    </div>
+
+
 
     <script src="../script.js"></script>
     <script src="../theme_switch.js"></script>

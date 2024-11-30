@@ -10,21 +10,24 @@
 </head>
 
 <body>
+
     <!-- Nav Bar -->
-    <header>
+    <header style="z-index: 1; position: sticky;">
         <img class="logo" src="../images/logo.svg">
+
         <nav>
+
             <ul class="nav_items">
                 <li><a href="home.html">Home</a></li>
 
                 <li class="dropdown">
-                    <button class="dropbtn">Event Information</button>
+                    <button class="dropbtn"><a style="color: white" href="events.html">Event Information</a></button>
                     <div class="dropdown-content">
-                      <a href="events.html">Offered Events</a>
-                      <a href="events.html">Year-Round Schedule</a>
-                      <a href="events.html"></a>
+                        <a href="events.html">Offered Events</a>
+                        <a href="events.html">Year-Round Schedule</a>
+                        <a href="events.html"></a>
                     </div>
-  
+
                 </li>
 
                 <li><a href="about.html">About</a></li>
@@ -42,6 +45,109 @@
             </svg>
         </button>
     </header>
+
+
+
+    <div class="container">
+        <section class="card">
+            <div>
+                <h2>Welcome to SkillsUSA</h2>
+                <p>SkillsUSA is a national organization that empowers students to become world-class workers and leaders
+                    in their respective fields. At Metea Valley, we strive to foster excellence in career and technical
+                    education.</p>
+                <button class="cta-button"><a style="color: white" href="events.html">Explore Events</a></button>
+            </div>
+        </section>
+
+        <section class="card">
+            <div class="about-text">
+                <h2>What is SkillsUSA?</h2>
+                <p>SkillsUSA is a nonprofit organization that helps students develop the technical, leadership, and
+                    professional skills required to excel in their careers. Through competitions, leadership activities,
+                    and industry partnerships, SkillsUSA students gain real-world experience that prepares them for
+                    success after graduation.</p>
+            </div>
+        </section>
+
+        <!-- Impact and Stats with Floating Side Element -->
+        <section class="impact">
+            <div class="impact-text">
+                <h2 style="color: white;">Our Impact</h2>
+                <p style="color: white">SkillsUSA has made a significant impact on the students of Metea Valley, helping
+                    them succeed in
+                    technical fields through real-world experiences. Through competitions and leadership opportunities,
+                    students build skills that lead to greater success in their careers and beyond.</p>
+                <ul>
+                    <li style="color: white;">Over 70 students participated in the SkillsUSA state competitions last
+                        year.</li>
+                    <li style="color: white;">More than 20 students competed at the SkillsUSA National level!</li>
+                    <li style="color: white;">Our alumni are pursuing successful careers with industry leaders and top
+                        universities.</li>
+                </ul>
+            </div>
+            <div class="competition-overlay">
+                <h3>Be Part of the Change!</h3>
+                <p>Join the growing community of students who are shaping the future of technical education and
+                    workforce development.</p>
+            </div>
+        </section>
+
+        <!-- Meet the Team Section with Grid Layout -->
+        <section class="meet-the-team">
+            <h2>Meet the Team</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="wedam.jpg" alt="Mr. Wedam">
+                    <h3 style="color: #212121">Mr. Wedam</h3>
+                    <p style="color: #212121">SkillsUSA Instructor and Career Education Leader</p>
+                </div>
+                <div class="team-member">
+                    <img src="shunya.jpg" alt="Shunya">
+                    <h3 style="color: #212121">Shunya</h3>
+                    <p style="color: #212121">SkillsUSA Chapter President</p>
+                </div>
+                <div class="team-member">
+                    <img src="sai.jpg" alt="Sai">
+                    <h3 style="color: #212121">Sai</h3>
+                    <p style="color: #212121">SkillsUSA Chapter President</p>
+                </div>
+                <div class="team-member">
+                    <img src="heri.jpg" alt="Heri">
+                    <h3 style="color: #212121">Heri</h3>
+                    <p style="color: #212121">SkillsUSA Chapter President</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Competition Info Section with Gradient Background -->
+        <section class="competition-info">
+            <h2 style="color: white;">Competition Info</h2>
+            <div class="competition-grid">
+                <div class="competition-text">
+                    <p>Ready to compete? Here's everything you need to know about the SkillsUSA competition process:</p>
+                    <ul>
+                        <li style="color: white;"><strong>Class Code</strong>: 4eccqbl</li>
+                        <li style="color: white;">We offer 14 events that you can participate in. Talk to Mr. Wedam if
+                            you're interested in events that aren't listed here.</li>
+                        <li style="color: white;"><strong>Tryouts</strong> for Metea-held events occur from
+                            <strong>December 2nd to 13th</strong>.
+                        </li>
+                        <li style="color: white;"><strong>SkillsUSA Qualifying Tests</strong> will be held from
+                            <strong>February 18th to 21st</strong>.
+                        </li>
+                        <li style="color: white;">Be sure to sign up for membership during December, as it must be
+                            completed before the SkillsUSA Hosted Tryouts!</li>
+                    </ul>
+                </div>
+                <div class="competition-overlay">
+                    <div class="overlay-text">
+                        <h3>Prepare to Compete!</h3>
+                        <p>Start your journey by signing up for events and attending tryouts in December!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
 
 
 
