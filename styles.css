@@ -495,7 +495,7 @@ section ul li {
 .team-member {
     background-color: white;
     border-radius: 10px;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease-in-out;
@@ -523,6 +523,7 @@ section ul li {
 
 .team-member p {
     font-size: 16px;
+    overflow-wrap: break-word;
     color: var(--secondary-text);
 }
 
